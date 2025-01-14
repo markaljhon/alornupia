@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi, I'm Aljhon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --accent: #ffd800;
+        --border-color: #333;
+        --light-color: #f8f8f8;
+        --dark-color: #222;
+        /* --border: 1px solid var(--border-color); */
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        font-family: "Space Grotesk", serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+      }
+      a {
+        text-decoration: none;
+      }
+      h2 {
+        margin: 0;
+      }
+      a#hero {
+        color: var(--accent);
+      }
+      nav.header {
+        position: absolute;
+        padding: 0.75rem 1rem;
+        width: 100vw;
+      }
+      main {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      section.section-hero {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50%;
+        height: 100%;
+      }
+      section.section-hero > div.tile-tl,
+      section.section-hero > div.tile-tr {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        border: var(--border);
+        border-top-width: 0;
+        border-left-width: 0;
+        padding: 3rem;
+      }
+      section.section-hero > div.tile-tl > h1 {
+        font-size: 4rem;
+        padding: 1.5rem;
+        text-transform: uppercase;
+      }
+      section.section-hero > div.tile-br {
+        border: var(--border);
+        border-bottom-width: 0;
+        border-right-width: 0;
+      }
+
+      section.section-hero > div.tile-tr {
+        gap: 2rem;
+        text-wrap: pretty;
+      }
+      section.section-hero > div.tile-tr div.photo-container > img {
+        width: 250px;
+      }
+      section.section-hero > div.tile-tr div.intro-container {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+      }
+      section.section-hero > div.tile-tr p {
+        font-weight: 500;
+      }
+      section.section-hero > div.tile-tr p.pre {
+        font-size: 1.25rem;
+      }
+      section.section-hero > div.tile-tr p.see {
+        font-size: 1.75rem;
+        margin-top: 1.75rem;
+        text-transform: capitalize;
+        cursor: pointer;
+      }
+      section.section-hero > div.tile-tr p.see:hover {
+        text-decoration: underline;
+      }
+
+      section.section-hero > div.tile-bl div.job-title {
+        position: absolute;
+        width: 100%;
+        padding: 0 4.5rem;
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.75rem;
+      }
+      section.section-hero > div.tile-br > div.digital {
+        font-size: 12rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+        position: fixed;
+        bottom: 4rem;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="header">
+      <a id="hero" href="./hero">
+        <h2>ALJHON.</h2>
+      </a>
+    </nav>
+    <main>
+      <section class="section-hero">
+        <div class="tile-tl">
+          <h1>
+            Aljhon
+            <br />
+            Ornupia
+          </h1>
+        </div>
+        <div class="tile-tr">
+          <p class="pre">[ AND I'M</p>
+          <div class="intro-container">
+            <div class="photo-container">
+              <img
+                src="https://scontent.fmnl30-1.fna.fbcdn.net/v/t39.30808-6/457132499_8253559401333554_6326350082178230551_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFxIylbl1SzB6Ailv0PBO4el-RLDzljzhyX5EsPOWPOHNoMOdP7U-d1nw1jZFG5t-ADr26-2arvU1XXtkJfArkp&_nc_ohc=8gqvgKE79_QQ7kNvgFswSqD&_nc_oc=Adhr_i_KkNzEqbPYYyTA_33-GBh4HPGaulLla4F8xO25EzKwmXizNkx7rN638HpKSaQ&_nc_zt=23&_nc_ht=scontent.fmnl30-1.fna&_nc_gid=AuPyRvzoFCDkXXEhRqGFQuY&oh=00_AYDmcel3HI4WcdsJ60bwo91EKL0JYJf31xweoTioIfeHWA&oe=678CA86D"
+              />
+            </div>
+            <div class="intro">
+              <p>Transforming Ideas into Interactive Web Experiences. ]</p>
+              <p class="see">WIP</p>
+            </div>
+          </div>
+        </div>
+        <div class="tile-bl">
+          <div class="job-title">
+            <p>Web Developer</p>
+            <p>Web Developer</p>
+            <p>Web Developer</p>
+            <p>Web Developer</p>
+          </div>
+        </div>
+        <div class="tile-br">
+          <div class="digital">
+            <h1>Digital Portfolio</h1>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
